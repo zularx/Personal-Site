@@ -1,0 +1,313 @@
+:root{
+    font-size: 62.5%;
+    --backcolor: rgb(26, 13, 0);
+    --blockcolor: rgb(64, 32, 0);
+    --highlight: #E9663D;
+    --white: #FFFFFF;
+    --picbg: #643400;
+    --hrefhover: #FFBC1C;
+}
+
+body{
+    background-color: var(--backcolor);
+}
+
+h2{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+p{
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+
+/* HEADER */
+
+header{
+    background-color: var(--blockcolor);
+    height: 40rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    text-align: center;
+}
+
+header>nav>ul{
+    margin: 0;
+    display: none;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    gap: 1rem;
+}
+
+header>nav{
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    border-radius: 4rem;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5rem;
+}
+header>nav>button{
+    background-color: var(--blockcolor);
+    border: none;
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header>nav>button>.changeLangBtn{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+}
+
+header>nav>button>.changeLangBtnHover{
+    position: absolute;
+    opacity: 0;
+    width: 3rem;
+    height: 3rem;
+}
+header>nav>button:hover{
+    cursor: pointer;
+}
+
+header>nav>button:hover .changeLangBtn{
+    opacity: 0;
+    transition: .3s;
+}
+
+header>nav>button:hover .changeLangBtnHover{
+    opacity: 1;
+    transition: .3s;
+}
+
+header>nav>button:active .changeLangBtn{
+    opacity: 1;
+    transition: .2s;
+}
+header>nav>button:active .changeLangBtnHover{
+    opacity: 0;
+    transition: .2s;
+}
+
+header>nav>.burgerMenu>span{
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: var(--white);
+    display: block;
+    border-radius: 0.1rem;
+}
+
+header>nav>.burgerMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 2.5rem;
+    height: fit-content;
+    align-self: center;
+}
+
+header>nav>.burgerMenu:hover span{
+    background-color: var(--highlight);
+    transition: .3s;
+}
+
+header>nav>.burgerMenu:hover{
+    cursor: pointer;
+}
+
+header>nav>.burgerMenu:active span{
+    background-color: var(--white);
+    transition: .3s;
+}
+
+header>.meFr{
+    width: 25.6rem;
+    background-color: var(--picbg);
+    border-radius: 100rem;
+}
+
+header>h1{
+    margin-top: 2rem;
+    color: var(--white);
+    font-size: 2.5rem;
+    width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* CONTACT SECTION */
+
+.contactInformation{
+    margin: 6rem auto 2rem auto;
+    width: 90%;
+    background-color: var(--blockcolor);
+    border-radius: 1rem;
+}
+
+.contactInformation>.container{
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding: 1.5rem 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInformation>.container>h2{
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.contactInformation>.container>.textContainer{
+    align-self: center;
+    background-color: var(--picbg);
+    width: 95%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.contactInformation>.container>.textContainer>p>a{
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+.contactInformation>.container>.textContainer>p>a:hover{
+    color: var(--hrefhover);
+    transition: .3s;
+}
+
+.contactInformation>.container>.textContainer>p>a:active{
+    color: var(--highlight);
+    transition: .3s;
+}
+
+/* ABOUT SECTION */
+
+.AboutMe{
+    width: 90%;
+    margin: 0 auto 2rem auto;
+    background-color: var(--blockcolor);
+    border-radius: 1rem;
+}
+
+
+.AboutMe>.container{
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding: 1.5rem 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutMe>.container>.textContainer{
+    align-self: center;
+    background-color: var(--picbg);
+    width: 95%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.AboutMe>.container>h2{
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+/* SITE NAVIGATION SECTION */
+
+.siteNavigation{
+    width: 90%;
+    margin: 0 auto 2rem auto;
+    background-color: var(--blockcolor);
+    border-radius: 1rem;
+}
+
+
+.siteNavigation>.container{
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding: 1.5rem 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.siteNavigation>.container>.textContainer{
+    align-self: center;
+    background-color: var(--picbg);
+    width: 95%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.siteNavigation>.container>h2{
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+/* MY SETTUP SECTION */
+
+.mySettup{
+    width: 90%;
+    margin: 0 auto 2rem auto;
+    background-color: var(--blockcolor);
+    border-radius: 1rem;
+}
+
+
+.mySettup>.container{
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding: 1.5rem 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.mySettup>.container>.textContainer{
+    align-self: center;
+    background-color: var(--picbg);
+    width: 95%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.mySettup>.container>h2{
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.mySettup>.container>.textContainer>ul{
+    list-style: none;
+    padding: 0;
+}
+.mySettup>.container>.textContainer>ul>li{
+    color: var(--white);
+    padding-bottom: 0.4rem;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--blockcolor);
+    height: 20rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+
+footer>.footerTitle{
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: var(--highlight);
+    padding-top: 6rem;
+    margin: 0;
+}
