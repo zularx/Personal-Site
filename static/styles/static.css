@@ -62,6 +62,7 @@ p{
 .enTxt{
     position: absolute;
     opacity: 1;
+    z-index: 2;
 }
 
 .ruTxt{
@@ -69,37 +70,44 @@ p{
     z-index: 2;
     font-family: "Noto-Sans-ExtraLight";
     opacity: 0;
+    z-index: 1;
 }
 .ruTxtH2{
     position: absolute;
     font-family: "Noto-Sans-Medium";
     opacity: 0;
+    z-index: 1;
 }
 .enTxtH2{
     position: absolute;
     font-family: "Noto-Sans-Medium";
     opacity: 1;
+    z-index: 2;
 }
 
 .title>.ruTxtH1{
     position: absolute;
     font-family: "Noto-Sans-ExtraBold";
     opacity: 0;
+    z-index: 1;
 }
 
 .title>.enTxtH1{
     position: absolute;
     opacity: 1;
+    z-index: 2;
 }
 
 #noDisp{
     opacity: 0;
     transition: opacity 0.4s ease;
+    z-index: 1;
 }
 
 #disp{
     opacity: 1;
     transition: opacity 0.4s ease;
+    z-index: 2;
 }
 
 /* HEADER */
