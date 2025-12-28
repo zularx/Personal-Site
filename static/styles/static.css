@@ -13,6 +13,21 @@
     src: url(/static/fonts/Outfit/Outfit-ExtraLight.ttf);
 }
 
+@font-face {
+    font-family: "Noto-Sans-ExtraBold";
+    src: url(/static/fonts/NotoSans/NotoSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Noto-Sans-Medium";
+    src: url(/static/fonts/NotoSans/NotoSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Noto-Sans-ExtraLight";
+    src: url(/static/fonts/NotoSans/NotoSans-ExtraLight.ttf);
+}
+
 :root{
     font-size: 62.5%;
     --backcolor: rgb(26, 13, 0);
@@ -40,6 +55,52 @@ p{
     font-size: 1.5rem;
 }
 
+.textContainer{
+    position: relative;
+    top: 4rem;
+}
+.enTxt{
+    position: absolute;
+    opacity: 1;
+}
+
+.ruTxt{
+    position: absolute;
+    z-index: 2;
+    font-family: "Noto-Sans-ExtraLight";
+    opacity: 0;
+}
+.ruTxtH2{
+    position: absolute;
+    font-family: "Noto-Sans-Medium";
+    opacity: 0;
+}
+.enTxtH2{
+    position: absolute;
+    font-family: "Noto-Sans-Medium";
+    opacity: 1;
+}
+
+.title>.ruTxtH1{
+    position: absolute;
+    font-family: "Noto-Sans-ExtraBold";
+    opacity: 0;
+}
+
+.title>.enTxtH1{
+    position: absolute;
+    opacity: 1;
+}
+
+#noDisp{
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#disp{
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
 
 /* HEADER */
 
@@ -153,15 +214,22 @@ header>.meFr{
     border-radius: 100rem;
 }
 
-header>h1{
-    margin-top: 2rem;
+header>.title>h1{
     color: var(--white);
     font-size: 2.5rem;
     width: 32rem;
     margin-left: auto;
     margin-right: auto;
     font-family: "Outfit-ExtraBold";
+    margin: 0;
+}
+header>.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
     margin-bottom: 4rem;
+    height: 57.5px;
 }
 
 
@@ -172,6 +240,7 @@ header>h1{
     width: 90%;
     background-color: var(--blockcolor);
     border-radius: 1rem;
+    height: 204.75px;
 }
 
 .contactInformation>.container{
@@ -217,6 +286,7 @@ header>h1{
     margin: 0 auto 2rem auto;
     background-color: var(--blockcolor);
     border-radius: 1rem;
+    height: 243.75px;
 }
 
 
@@ -226,6 +296,7 @@ header>h1{
     padding: 1.5rem 0 1.5rem 0;
     display: flex;
     flex-direction: column;
+    height: 213.75px;
 }
 
 .AboutMe>.container>.textContainer{
@@ -234,6 +305,7 @@ header>h1{
     width: 95%;
     padding: 1rem;
     border-radius: 1rem;
+    height: 150.75px;
 }
 
 .AboutMe>.container>h2{
@@ -248,6 +320,7 @@ header>h1{
     margin: 0 auto 2rem auto;
     background-color: var(--blockcolor);
     border-radius: 1rem;
+    height: 243.75px;
 }
 
 
@@ -257,6 +330,7 @@ header>h1{
     padding: 1.5rem 0 1.5rem 0;
     display: flex;
     flex-direction: column;
+    height: 213.75px;
 }
 
 .siteNavigation>.container>.textContainer{
@@ -265,11 +339,16 @@ header>h1{
     width: 95%;
     padding: 1rem;
     border-radius: 1rem;
+    height: 150.75px;
 }
 
 .siteNavigation>.container>h2{
     margin-bottom: 2rem;
     margin-top: 0;
+}
+
+.siteNavigation>.container>.textContainer>.ruTxt{
+    margin: 0;
 }
 
 /* MY SETTUP SECTION */
@@ -279,6 +358,7 @@ header>h1{
     margin: 0 auto 2rem auto;
     background-color: var(--blockcolor);
     border-radius: 1rem;
+    height: 198px;
 }
 
 
@@ -288,6 +368,7 @@ header>h1{
     padding: 1.5rem 0 1.5rem 0;
     display: flex;
     flex-direction: column;
+    height: 168px;
 }
 
 .mySettup>.container>.textContainer{
@@ -296,6 +377,7 @@ header>h1{
     width: 95%;
     padding: 1rem;
     border-radius: 1rem;
+    height: 105px;
 }
 
 .mySettup>.container>h2{

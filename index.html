@@ -17,7 +17,7 @@
                 <li><a href="#">My projects</a></li>
                 <li><a href="#">Send me smth</a></li>
             </ul>
-            <button class="changeLang">
+            <button class="changeLang" id="changeLangBtn">
                 <img src="static/images/langBtn/langBtn.svg" alt="change language" class="changeLangBtn">
                 <img src="static/images/langBtn/langBtnHover.svg" alt="change language" class="changeLangBtnHover">
             </button>
@@ -27,48 +27,68 @@
                 <span></span>
             </div>
         </nav>
-        <h1>Frontend proggrammer's personal website</h1>
+        <div class="title">
+            <h1 class="enTxtH1">Frontend proggrammer's personal website</h1>
+            <h1 class="ruTxtH1">Персональный сайт фронтенд разработчика</h1>
+        </div>
         <img src="static/images/meFr.png" alt="meFR" class="meFr">
     </header>
     <main>
         <section class="contactInformation">
             <div class="container">
-                <H2>My contact information</H2>
+                <H2 class="enTxtH2">My contact information</H2>
+                <h2 class="ruTxtH2">Контактная информация</h2>
                 <div class="textContainer">
                     <p>Telegram: @NE_KTA_RYN_KIUwU</p>
                     <p>Email: alexslcraft@gmail.com</p>
-                    <p>Github: <a href="https://github.com/zularx">Click On me! 0_0</a></p>
+                    <p>Github: <a href="https://github.com/zularx" class="enTxt">Click On me! 0_0</a><a href="https://github.com/zularx" class="ruTxt">Нажми на меня! 0_0</a></p>
                 </div>
             </div>
         </section>
         <section class="AboutMe">
             <div class="container">
-                <h2>About me</h2>
+                <h2 class="enTxtH2">About me</h2>
+                <h2 class="ruTxtH2">Обо мне</h2>
                 <div class="textContainer">
-                    <p>
+                    <p class="enTxt">
                         I study at Moscow Polytechnic University. I'm in my first year, specializing in Web Technologies.
                         Currently, I am fully confident in HTML and CSS, and a little in JS. Also I can work with Git, Github and Figma. I estimate my English
                         proficiency to be at the B1
                         level.
+                    </p>
+                    <p class="ruTxt">
+                        Сейчас я учусь в Московском политехе, на первом курсе направления "Веб-технологии".
+                        Я уже полностью выучил HTML и CSS и могу с ними работать, также немного знаю JS. Могу работать с Git, Github и Figma. Мой нынешний уровень английского - B1.
                     </p>
                 </div>
             </div>
         </section>
         <section class="siteNavigation">
             <div class="container">
-                <h2>Site navigation</h2>
+                <h2 class="enTxtH2">Site navigation</h2>
+                <h2 class="ruTxtH2">Навигация по сайту</h2>
                 <div class="textContainer">
-                    <p>There are 3 pages on this site. 1'st one is home, you can learn my contact information and some facts about me from it. 2'nd one
+                    <p class="enTxt"> There are 3 pages on this site. 1'st one is home, you can learn my contact information and some facts about me from it. 2'nd one
                         is the page of my projects. You can see some of my projects on it(screenshots etc.). And on 3'rd one you
                         can send me some message.</p>
+                    <p class="ruTxt">
+                        На этом сайте есть 3 страницы. Сейчас вы находитесь на первой из них - домашняя страница. На ней вы можете узнать мою контактную информацию, а также некоторые факты обо мне. На второй странице распологаются мои проекты (скриншоты и тд.). А с 3 страницы вы можете отправить мне какое нибудь сообщение.
+                    </p>
                 </div>
             </div>
         </section>
         <section class="mySettup">
             <div class="container">
-                <h2>My PC settup (if you care ofc)</h2>
+                <h2 class="enTxtH2">My PC settup (if you care ofc)</h2>
+                <h2 class="ruTxtH2">конфигурация моего ПК</h2>
                 <div class="textContainer">
-                    <ul>
+                    <ul class="enTxt">
+                        <li>Intel core i5 13400F</li>
+                        <li>AMD Radeon RX 9060 XT Reaper White</li>
+                        <li>Arch linux/hyprland</li>
+                        <li>RAM: DDR5 32gb</li>
+                    </ul>
+                    <ul class="ruTxt">
                         <li>Intel core i5 13400F</li>
                         <li>AMD Radeon RX 9060 XT Reaper White</li>
                         <li>Arch linux/hyprland</li>
@@ -82,6 +102,7 @@
         <p class="footerTitle">nektaryn</p>
         <p class="copyrightText">designed by myself</p>
     </footer>
+    <script src="static/changeLang.js"></script>
 </body>
 
 </html>
